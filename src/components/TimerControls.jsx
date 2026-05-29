@@ -54,7 +54,7 @@ export default function TimerControls({
           onClick={() => handleModeSwitch('focus')}
           className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs md:text-sm font-semibold tracking-wide transition-all duration-300 ${
             !isBreak 
-              ? 'bg-emerald-500 text-brand-dark shadow-md scale-[1.02]' 
+              ? 'bg-pink-600 text-white shadow-md scale-[1.02]' 
               : 'text-indigo-300/80 hover:text-white hover:bg-white/5'
           }`}
         >
@@ -65,7 +65,7 @@ export default function TimerControls({
           onClick={() => handleModeSwitch('break')}
           className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs md:text-sm font-semibold tracking-wide transition-all duration-300 ${
             isBreak 
-              ? 'bg-rose-500 text-brand-dark shadow-md scale-[1.02]' 
+              ? 'bg-pink-400 text-white shadow-md scale-[1.02]' 
               : 'text-indigo-300/80 hover:text-white hover:bg-white/5'
           }`}
         >
@@ -92,8 +92,8 @@ export default function TimerControls({
             isActive
               ? 'bg-amber-400 hover:bg-amber-300 shadow-amber-500/10'
               : isBreak 
-                ? 'bg-rose-400 hover:bg-rose-300 shadow-rose-500/10'
-                : 'bg-emerald-400 hover:bg-emerald-300 shadow-emerald-500/10'
+                ? 'bg-pink-400 hover:bg-pink-300 shadow-pink-500/10'
+                : 'bg-pink-500 hover:bg-pink-400 shadow-pink-600/10'
           }`}
         >
           {isActive ? (
@@ -127,7 +127,7 @@ export default function TimerControls({
               >
                 <Minus className="w-3.5 h-3.5" />
               </button>
-              <span className="font-mono font-bold text-emerald-400 text-sm">{focusMinutes}m</span>
+              <span className="font-mono font-bold text-pink-500 text-sm">{focusMinutes}m</span>
               <button 
                 onClick={() => adjustMinutes('focus', 5)}
                 className="p-1.5 rounded-lg hover:bg-white/5 text-indigo-300 hover:text-white transition-colors"
@@ -147,7 +147,7 @@ export default function TimerControls({
               >
                 <Minus className="w-3.5 h-3.5" />
               </button>
-              <span className="font-mono font-bold text-rose-400 text-sm">{breakMinutes}m</span>
+              <span className="font-mono font-bold text-pink-400 text-sm">{breakMinutes}m</span>
               <button 
                 onClick={() => adjustMinutes('break', 1)}
                 className="p-1.5 rounded-lg hover:bg-white/5 text-indigo-300 hover:text-white transition-colors"

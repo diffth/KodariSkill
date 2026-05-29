@@ -74,13 +74,13 @@ export default function KomodoroCharacter({ status }) {
       </div>
 
       {/* 캐릭터 이미지 콘테이너 */}
-      <div className="relative w-36 h-36 md:w-44 md:h-44 flex items-center justify-center bg-gradient-to-tr from-indigo-900/40 to-pink-900/20 rounded-full p-2 border border-brand-border shadow-inner">
+      <div className="relative w-36 h-36 md:w-44 md:h-44 flex items-center justify-center bg-gradient-to-tr from-pink-900/30 to-indigo-900/20 rounded-full p-2 border border-brand-border shadow-inner">
         {/* 타이머 작동 중일 때 뒤에 살며시 도는 귀여운 네온 백라이트 링 */}
         {status === 'focus' && (
-          <div className="absolute inset-0 rounded-full border-2 border-emerald-500/30 animate-pulse-ring -z-10"></div>
+          <div className="absolute inset-0 rounded-full border-2 border-pink-500/40 animate-pulse-ring -z-10"></div>
         )}
         {status === 'break' && (
-          <div className="absolute inset-0 rounded-full border-2 border-rose-500/30 animate-pulse-ring -z-10"></div>
+          <div className="absolute inset-0 rounded-full border-2 border-pink-300/30 animate-pulse-ring -z-10"></div>
         )}
 
         <img 

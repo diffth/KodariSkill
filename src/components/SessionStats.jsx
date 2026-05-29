@@ -45,7 +45,7 @@ export default function SessionStats({ completedSessions, onResetStats }) {
     <div className="w-full max-w-sm mx-auto flex flex-col gap-4 p-5 bg-brand-card border border-brand-border rounded-3xl shadow-xl transition-all duration-300 hover:bg-brand-card-hover text-left">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2 text-indigo-300">
-          <Award className="w-5 h-5 text-amber-400" />
+          <Award className="w-5 h-5 text-pink-400" />
           <span className="text-sm font-bold tracking-wider select-none">Today's Achievements</span>
         </div>
         
@@ -64,7 +64,7 @@ export default function SessionStats({ completedSessions, onResetStats }) {
       {/* 완료 세션 개수 카드 */}
       <div className="bg-indigo-950/30 border border-indigo-500/10 rounded-2xl p-4 flex flex-col gap-3">
         <div className="flex items-baseline gap-2">
-          <span className="text-3xl font-extrabold font-mono text-amber-400">{completedSessions}</span>
+          <span className="text-3xl font-extrabold font-mono text-pink-400">{completedSessions}</span>
           <span className="text-xs text-indigo-300 font-medium select-none">completed session{completedSessions !== 1 ? 's' : ''}</span>
         </div>
 

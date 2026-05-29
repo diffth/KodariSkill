@@ -141,7 +141,7 @@ export default function App() {
       <header className="flex flex-col items-center gap-1.5 text-center">
         <div className="flex items-center gap-2">
           <span className="text-3xl">🍅</span>
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight font-sans bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight font-sans bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-rose-400 to-fuchsia-400">
             Komodoro
           </h1>
         </div>
